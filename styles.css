@@ -71,9 +71,12 @@ label {
     box-sizing: border-box;
     margin-bottom: 10px;
     margin-right: 100px;
-    padding: 10px;
-    
-    
+    padding: 10px;   
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 button[type="submit"] {
@@ -83,17 +86,19 @@ button[type="submit"] {
     border-radius: 10px;
     border-color: #36501f;
     color: white;
+    margin-top: 30px;
 }
 
 .header > p {
     width: 400px;
+    
 }
 
 .image {
     background-image: url(images/photo-1585202900225-6d3ac20a6962.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-right: 200px;    
+    width: 30vw;  
 }
 
 .logo {
@@ -102,10 +107,28 @@ button[type="submit"] {
     text-align: center;
     font-family: 'odinNorse';
     margin-top: 30%;
-    padding-right: 200px;
-
-
+    padding: 20px;
+    padding-right: 50%;
+    padding-left: 50%;
+    background-image: url(images/odin-lined.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 44% 50%;
+    font-size: 50px    
 }
+
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(147, 226, 252);
+    box-shadow: 2px 2px 2px 0px rgba(196,196,196,0.76);
+}
+
+#confirm-pass:invalid,
+#password:invalid {
+    border: 1px solid rgb(255, 71, 71);
+}
+
 
 
 
